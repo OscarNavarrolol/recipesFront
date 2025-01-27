@@ -1,0 +1,147 @@
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.nav button {
+  margin-left: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #ff6f61;
+  color: #ffffff;
+}
+
+.heroContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.featureCard {
+  text-align: center;
+  max-width: 300px;
+  margin: 1rem;
+  flex: 1 1 300px;
+}
+
+.featureCard mat-icon {
+  font-size: 3rem;
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureCard p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.featureCard img,
+.featureCard mat-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  color: #ff6f61;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+/* Design to responsive */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav {
+    margin-top: 1rem;
+  }
+
+  .nav button {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .heroContent h2 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .featureCard {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .features {
+    justify-content: center;
+  }
+
+  .featureCard {
+    flex: 1 1 45%;
+    margin: 1rem;
+  }
+}
