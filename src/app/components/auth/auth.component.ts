@@ -7,11 +7,12 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { user } from '../../models/users';
 import { MatInputModule } from '@angular/material/input';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-auth',
   standalone: true,
-  imports: [MatIconModule, MatButtonModule, MatInputModule, MatFormFieldModule, FormsModule],
+  imports: [MatIconModule, MatButtonModule, MatInputModule, MatFormFieldModule, FormsModule, CommonModule],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.css'
 })
