@@ -8,12 +8,14 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { importProvidersFrom } from '@angular/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes),
     provideClientHydration(),
     provideAnimations(),
     provideAnimationsAsync(),
-    importProvidersFrom(MatButtonModule, MatIconModule),
+    importProvidersFrom(MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule),
   ]
 };
